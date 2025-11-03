@@ -22,5 +22,4 @@ nkp create cluster nutanix -c $CLUSTER_NAME \
     ${CP_CATEGORIES:+--control-plane-pc-categories "$CP_CATEGORIES"} \
     ${WORKER_CATEGORIES:+--worker-pc-categories "$WORKER_CATEGORIES"} \
     --bundle ${KONVOYIMAGES},${KOMMANDERIMAGES} \
-    --self-managed \
-    --dry-run
+    --self-managed

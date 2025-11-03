@@ -129,11 +129,11 @@ This installation method lets you fully customize your cluster configuration. Th
 This installation method lets you fully customize your cluster configuration. The following commands create a cluster with three control plane node and four worker nodes.
 This method uses the NKP Bundle to install an NKP cluster without requiring internet access on the jump host VM or a preconfigured internal registry.
 
-1. Download the NKP Bundle (e.g. *nkp-bundle_v2.16.0_linux_amd64.tar.gz*) from the Nutanix Download Portal to your jump host VM and extract it.
+1. Download the NKP Bundle (e.g. *nkp-bundle_v2.16.0_linux_amd64.tar.gz*) from the [Nutanix Download Portal](https://portal.nutanix.com/page/downloads?product=nkp) to your jump host VM and extract it.
 
 1. Before running the following command in your jump host VM, update the values with your environment: [nkp-env-bundle](./nkp-env-bundle)
 
-1. The next command will start the installation process of an NKP management cluster: [nkp-create-cluster](./nkp-create-mgmt-cluster-bundle.sh)
+1. The next command will start the installation process of an NKP management cluster: [nkp-create-cluster-bundle](./nkp-create-mgmt-cluster-bundle.sh)
 
 
 ## Support and Disclaimer
