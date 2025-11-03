@@ -81,7 +81,7 @@ For NKP CLI:
 1. git clone this repo
 
     ```shell
-    git clone https://github.com/nutanixdev/nkp-quickstart.git
+    git clone https://github.com/mheistruevers/nkp-quickstart.git
     ```
 
 1. Install the NKP CLI with the command: [get-nkp-cli](./get-nkp-cli)
@@ -130,6 +130,12 @@ This installation method lets you fully customize your cluster configuration. Th
 This method uses the NKP Bundle to install an NKP cluster without requiring internet access on the jump host VM or a preconfigured internal registry.
 
 1. Download the NKP Bundle (e.g. *nkp-bundle_v2.16.0_linux_amd64.tar.gz*) from the [Nutanix Download Portal](https://portal.nutanix.com/page/downloads?product=nkp) to your jump host VM and extract it.
+
+1. The NKP bundle contains the Konvoy bootstrap image - load the bundle using the docker command - e.g.
+
+    ```shell
+    docker load -i konvoy-bootstrap-image-nkp-version.tar
+    ```
 
 1. Before running the following command in your jump host VM, update the values with your environment: [nkp-env-bundle](./nkp-env-bundle)
 
